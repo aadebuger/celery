@@ -16,5 +16,5 @@ RUN { \
 # --link some-rabbit:rabbit "just works"
 ENV CELERY_BROKER_URL amqp://guest@rabbit
 
-USER user
+#USER user
 CMD ["celery", "worker"]
