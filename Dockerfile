@@ -6,6 +6,7 @@ WORKDIR /home/user
 ENV CELERY_VERSION 3.1.18
 
 RUN pip install celery=="$CELERY_VERSION"
+RUN pip install docker-py
 
 RUN { \
 	echo 'import os'; \
